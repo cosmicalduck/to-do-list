@@ -137,13 +137,14 @@ export const ActivitySlice = createSlice({
     },
     filterStatus: (state, action: PayloadAction<filterStatusPayload>) => {
       const { status, checked } = action.payload;
-      const initialFilterState = state.filteredActivities;
+      const auxUnfilteredArray = state.activities.filter((activity) => activity.status === status);
+      const unfilteredArray = state.filteredActivities.concat(auxUnfilteredArray);
       const filteredArray = state.filteredActivities.filter(
         (activity) => activity.status !== status
       );
       return {
         ...state,
-        filteredActivities: checked ? filteredArray : initialFilterState,
+        filteredActivities: checked ? unfilteredArray : filteredArray,
       };
     },
   },

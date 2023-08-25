@@ -1,0 +1,72 @@
+.link-create-activity {
+  text-decoration: none;
+  color: black;
+}
+.link-edit {
+  text-decoration: none;
+  color: white;
+}
+
+.add-activity {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.checkbox-filter {
+  accent-color: #9275a9 !important;
+}
+
+.activiy-form {
+  width: 50vw;
+}
+
+.activities-container {
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.activity-card {
+  width: 50vw;
+}
+
+.card-title-div {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.card-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.done {
+  background-color: #82b049;
+  /* ya pensaremos un mejor color */
+}
+
+.close-to-deadline {
+  background-color: #ffcd58;
+}
+
+.past-deadline {
+  background-color: #ff5c4d;
+}
+
+.form-date-range-label {
+  margin-top: 15px !important;
+}
+
+.dropdown {
+  background-color: #8ea5d2 !important;
+  border-color: #8f8dc0 !important;
+}

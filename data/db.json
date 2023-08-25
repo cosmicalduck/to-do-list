@@ -1,0 +1,12 @@
+{
+  "activitiesList": [
+    {
+      "id": "7035234b-bd5d-44e4-affc-e4367366f038",
+      "name": "Nadar",
+      "description": "Al menos 100 metros",
+      "status": 1,
+      "creationDate": "2023-08-25T04:39:22.192Z",
+      "deadline": "2023-09-07T00:00:00.000Z"
+    }
+  ]
+}

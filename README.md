@@ -1,27 +1,33 @@
-# React + TypeScript + Vite
+# To Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Desplegar proyecto
 
-Currently, two official plugins are available:
+### Requisitos
+1. Tener Node.js instalado (versión 16 o superior)
+   
+   [Página oficial de Node.js para descargar](https://nodejs.org/en)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Desplegar proyecto de forma local
 
-## Expanding the ESLint configuration
+1. Descargar el archivo .zip del repositorio y extraerlo, o clonarlo utilizando el comando:
+   
+   `git clone https://github.com/cosmicalduck/to-do-list.git`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+2. Abrir una terminal y posicionarse en la carpeta del repositorio.
+   
+3. Instalar dependencias, ejecutando el comando:
+   
+   `npm install`
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+4. Instalar json-server para poder emular la API REST del proyecto utilizando el comando:
+`npm install -g json-server`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+5. Ejecutar json-server, que emula la API REST del proyecto, utilizando el comando:
+ `npx json-server --watch data/db.json`
+
+
+6. Abrir una nueva terminal, posicionarla en la carpeta del repositorio y desplegar la aplicación en modo de desarrollo, utilizando el comando:
+`npm run dev`
+
+7. Abrir el navegador en la dirección `http://localhost:5173/`
